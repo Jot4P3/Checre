@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./Confirmar E-mail.css" />
+
+  <title>Insira seu Email.</title>
+
+</head>
+
+<body>
+
+  <div class="perpendicular-lines"></div>
+  <div class="perpendicular-lines-dual"></div>
+  <div class="perpendicular-lines-inferior"></div>
+  <div class="perpendicular-lines-dual-inferior"></div>
+
+  <div class="container">
+
+    <div class="header">
+
+        <img src="./Imagens/Logo.png">
+        
+    </div> 
+
+    <div class="perpendicular-lines"></div>
+    <div class="perpendicular-lines-dual"></div>
+    <div class="perpendicular-lines-inferior"></div>
+    <div class="perpendicular-lines-dual-inferior"></div>
+
+    <form id="form" class="form" onsubmit="enviarFormulario(); return false;">
+
+      <div class="form-content">
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Digite o seu E-mail..."/>
+        <a>Aqui vai a mensagem de erro....</a>
+      </div>
+
+        <button type="button" class="button" id="confirmButton"> Confirmar </button>
+
+
+    </form>
+
+  <div id="codigoInput" style="display: none;">
+    <label for="codigo">Insira o Código:</label>
+    <input type="text" id="codigo" placeholder="Digite o Código..." pattern="[0-9]*"/>
+    <a>Aqui vai a mensagem de erro....</a>
+    <button type="button" class="button" id="verifyButton"> Verificar </button>
+  </div>
+    
+
+</div> 
+  
+</div>
+
+<script src="./Confirmar E-mail.js"></script>
+
+</body>
+</html>

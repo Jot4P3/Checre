@@ -1,0 +1,259 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial";
+    overflow: hidden;
+  }
+  
+  body{
+
+    background: #bccefb;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+.perpendicular-lines::before,
+.perpendicular-lines::after{
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0;
+
+}
+
+.perpendicular-lines::before{
+
+    width: 50%;
+    height: 5px;
+    top: 3%;
+    left: 25px;
+    transform: translateY(-50%)
+    
+}
+
+.perpendicular-lines::after{
+
+    width: 5px;
+    height: 70%;
+    top: 15px;
+    left: 40px;
+    transform: translateX(-50%);
+
+}
+
+.perpendicular-lines-dual::before,
+.perpendicular-lines-dual::after{
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0; 
+
+} /*superior direito*/
+
+.perpendicular-lines-dual::before{
+
+    width: 40%;
+    height: 5px;
+    top: 5%;
+    left: 25px;
+    transform: translateY(-50%)
+    
+}
+
+.perpendicular-lines-dual::after{
+
+    width: 5px;
+    height: 60%;
+    top: 15px;
+    left: 55px;
+    transform: translateX(-50%);
+
+}/*segundo superior direito*/
+
+.perpendicular-lines-inferior::before,
+.perpendicular-lines-inferior::after{
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0;
+
+}
+
+.perpendicular-lines-inferior::before{
+
+    width: 60%;
+    height: 5px;
+    top: 98%;
+    right: 15px;
+    transform: translateY(-50%)
+    
+}
+
+.perpendicular-lines-inferior::after{
+
+    width: 5px;
+    height: 60%;
+    top: 39%;
+    right: 25px;
+    transform: translateX(-50%);
+
+}/*inferior direito*/
+
+.perpendicular-lines-dual-inferior::before,
+.perpendicular-lines-dual-inferior::after{
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0;
+
+}
+
+.perpendicular-lines-dual-inferior::before{
+
+    width: 50%;
+    height: 5px;
+    top: 96%;
+    right: 15px;
+    transform: translateY(-50%)
+    
+}
+
+.perpendicular-lines-dual-inferior::after{
+
+    width: 5px;
+    height: 50%;
+    top: 49%;
+    right: 40px;
+    transform: translateX(-50%);
+
+}/*Segundo inferior esquerdo*/
+ 
+.container{
+
+    background-color: #fafafa;
+    border-radius: 14px;
+    margin: 2px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+    overflow: hidden;
+    border: 5px solid #e0e0e0;
+    padding: 10px;
+
+  }
+  
+  .header{
+
+    background: linear-gradient(120deg, #3acbf0 0%, #8bffd3 100%);
+    text-align: center;
+    width: 100%;
+
+
+  }
+  
+  label{
+
+    margin-top: 6px;
+    display: inline-block;
+    padding: 10px;
+    
+  }
+  
+  input{
+    
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #88bbff;
+    padding: 10px;
+
+  }
+  
+  input:hover{
+
+    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.3);
+    border: 2px solid #4CAF50;
+
+  }
+
+  input:focus{
+
+    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.3);
+    border: 2px solid #4CAF50;
+    outline: none;
+
+  }
+  
+  .form-content a{
+
+    position: flex;
+    visibility: hidden;
+
+  }
+
+  .button{
+
+    background-color: #00c3ff;
+    color: #FFF;
+    width: 90%;
+    border-radius: 14px;
+    padding: 5px;
+    border: 2px solid #3a5bf0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+    margin-left: 30px;
+  
+  }
+
+  button:hover {
+
+    background-color: #8bffd3;
+    border-color: #4CAF50;
+
+  }
+  button:hover {
+
+    background-color: #8bffd3;
+    border-color: #4CAF50;
+
+    }
+
+    .form-content a{
+
+    position: flex;
+    visibility: hidden;
+  
+    }  
+  
+  .form-content.error input{
+
+    background-color: #ffbab2;
+    border-color: #ff3b25;
+    color:#333;
+    visibility: visible;
+
+  }
+  
+  .form-content.error a{
+
+    color: #ff3b25;
+    visibility: visible;
+
+  }

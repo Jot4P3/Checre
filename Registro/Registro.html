@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./Registro.css" />
+
+  <title>Novo usuario - Sujeito Programador</title>
+</head>
+<body>
+
+
+  <div class="perpendicular-lines"></div>
+  <div class="perpendicular-lines-dual"></div>
+  <div class="perpendicular-lines-inferior"></div>
+  <div class="perpendicular-lines-dual-inferior"></div>
+
+
+  <div class="container">
+    <section class="header">
+
+      <img src="./Imagem/Registro.png">
+
+    </section>
+
+    <form id="form" class="form" onsubmit="enviarFormulario(); return false;">
+      <div class="form-content">
+        <label for="username">Nome de usuário:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Digite o nome de usuário..."
+        />
+        <a>Aqui vai a mensagem de erro....</a>
+      </div>
+
+
+      <div class="form-content">
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Digite o seu E-mail..."
+        />
+        <a>Aqui vai a mensagem de erro....</a>
+      </div>
+
+
+      <div class="form-content">
+        <label for="password">Senha:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Digite a sua senha..."
+        />
+        <a>Aqui vai a mensagem de erro....</a>
+      </div>
+
+
+      <div class="form-content">
+        <label for="password-confirmation">Confirmação de senha:</label>
+        <input
+          type="password"
+          id="password-confirmation"
+          placeholder="Digite a sua senha novamente..."
+        />
+        <a>Aqui vai a mensagem de erro....</a>
+      </div>
+
+
+      <div class="form-content">
+        <label for="phone">Número do Celular:</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Digite o seu número de celular com o DDD..."
+          pattern="[\d()+\-]+"
+          oninput="formatarNumeroTelefone(this)"
+          onblur="checkInputPhone()"/>
+          
+        <a> id="phoneError">Aqui vai a mensagem de erro para o número de celular...</a>
+      </div>
+
+
+      <button type="button" class="button-sms" onclick="enviarCodigoSMS()">Enviar Código SMS</button>
+
+
+      <div class="form-content" id="smsCodeContainer" style="display: none;">
+        <label for="smsCode">Código SMS:</label>
+        <input
+          type="text"
+          id="smsCode"
+          placeholder="Digite o código SMS recebido..."
+          oninput="validarNumeroSMS(this)"
+          onblur="checkInputSMScode()"
+        />
+        <a id="smsCodeError">Aqui vai a mensagem de erro para o código SMS...</a>
+      </div>
+
+      <div class="form-content">
+        <label for="area">Escolha a opção:</label>
+        <select id="area" name="area" onchange="mostrarCampoTexto()">
+          <option value="">Escolha a opção</option>
+          <option value="Diretor">Diretor</option>
+          <option value="Coordenador">Coordenador</option>
+          <option value="Nutricionista">Nutricionista</option>
+          <option value="Professor">Professor</option>
+          <option value="Secretário">Secretario</option>
+          <option value = "Pais e/ou Alunos">Pais e/ou Alunos</option>
+        </select>
+        <a>Aqui vai a mensagem de erro do serial... </a>
+      </div>
+      
+
+      <div id="serial-input" class="form-content" style="display: none;">
+        <label for="serial">Serial</label>
+        <input type="text" id="serial" placeholder="Digite o Serial..." maxlength="11" pattern="\d{3}\.\d{3}\.\d{3}">
+        <a>Aqui vai a mensagem de erro da Area... </a>
+      </div>
+
+      <button type="submit" class="button">Cadastrar</button>
+
+    </form>
+
+  </div>
+  
+
+  <script src="Registro.js"></script>
+  
+</body>
+</html>

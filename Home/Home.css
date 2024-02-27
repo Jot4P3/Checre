@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    background-color: #bccefb;
+    overflow: hidden;
+
+}
+
+.perpendicular-lines::before,
+.perpendicular-lines::after{
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0;
+
+}
+
+.perpendicular-lines::before{
+
+    width: 50%;
+    height: 5px;
+    top: 3%;
+    left: 25px;
+    transform: translateY(-50%)
+    
+}
+
+.perpendicular-lines::after{
+
+    width: 5px;
+    height: 70%;
+    top: 15px;
+    left: 40px;
+    transform: translateX(-50%);
+
+}
+
+.perpendicular-lines-dual::before,
+.perpendicular-lines-dual::after{
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0; 
+
+} /*superior direito*/
+
+.perpendicular-lines-dual::before{
+
+    width: 40%;
+    height: 5px;
+    top: 5%;
+    left: 25px;
+    transform: translateY(-50%)
+    
+}
+
+.perpendicular-lines-dual::after{
+
+    width: 5px;
+    height: 60%;
+    top: 15px;
+    left: 55px;
+    transform: translateX(-50%);
+
+}/*segundo superior direito*/
+
+.perpendicular-lines-inferior::before,
+.perpendicular-lines-inferior::after{
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0;
+
+}
+
+.perpendicular-lines-inferior::before{
+
+    width: 60%;
+    height: 5px;
+    top: 95%;
+    right: 15px;
+    transform: translateY(-50%)
+    
+}
+
+.perpendicular-lines-inferior::after{
+
+    width: 5px;
+    height: 60%;
+    top: 37%;
+    right: 25px;
+    transform: translateX(-50%);
+
+}/*inferior direito*/
+
+.perpendicular-lines-dual-inferior::before,
+.perpendicular-lines-dual-inferior::after{
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0;
+
+}
+
+.perpendicular-lines-dual-inferior::before{
+
+    width: 50%;
+    height: 5px;
+    top: 93%;
+    right: 15px;
+    transform: translateY(-50%)
+    
+}
+
+.perpendicular-lines-dual-inferior::after{
+
+    width: 5px;
+    height: 50%;
+    top: 47%;
+    right: 40px;
+    transform: translateX(-50%);
+
+}/*Segundo inferior esquerdo*/
+
+.logo{
+
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    margin: 0;
+    max-width: 800px;
+    background-color: transparent;
+    z-index:3;
+
+}
+
+header {
+
+    padding: auto;
+    text-align: center;
+    color: white;
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: right;
+    padding: auto;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    justify-content: right;
+
+
+}
+
+nav a:hover {
+
+    transform: scale(1.2);
+}
+
+.container {
+
+    position: absolute;
+    left: 30%;
+    width: 50%;
+    height: 400px;
+    border: 5px solid #e0e0e0;
+    padding: 10px;
+    background-color: transparent;
+    top: 300px;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+}
+
+.center {
+    position: relative; /* Alterei para absolute para alinhar corretamente com o .container */
+    left: 50%; /* Ajuste para centrar horizontalmente */
+    top: 10px; /* Ajuste para centrar verticalmente */ /* Ajuste para centrar corretamente */
+    width: 900px; /* Ajuste para que o .center ocupe o espaço restante */
+    padding: 45px;
+    border: 4px solid #e0e0e0;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.texto-sobre{
+
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: auto;
+
+}
+
+.texto-sobre h1{
+
+    color: rgb(3, 3, 3);
+    font-size: 36px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.texto-sobre h2{
+
+    color: rgb(3, 3, 3);
+    font-size: 24px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 4px 4px 4px;
+
+}
+.texto-sobre p {
+
+    color: rgb(3, 3, 3);
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);
+
+}
+
+button {
+
+    background-color: rgb(43, 132, 233);
+    color: white;
+    border: 2px solid black; 
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100px;
+    margin: 10px 4px;
+    
+}
+
+button:hover {
+
+    background-color: rgb(33, 122, 213);
+
+    }
+

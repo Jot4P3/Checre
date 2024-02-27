@@ -1,0 +1,54 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="Login.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <section>
+
+        <div class="container">
+
+            <div class="center">
+
+            <div class="header">
+                <img src="Imagem/Loguin.png" alt="Logo"> <!-- https://www.youtube.com/watch?v=OgWuW9_QG9Q -->
+            </div> 
+
+            <div class="perpendicular-lines"></div>
+            <div class="perpendicular-lines-dual"></div>
+            <div class="perpendicular-lines-inferior"></div>
+            <div class="perpendicular-lines-dual-inferior"></div>
+
+            <form method="post" onsubmit="validateForm(event);">
+
+                <div class="form-content">
+                    <label for="username">Nome de Usuário:</label>
+                    <input type="text" id="username" name="username" placeholder="Nome de Usuário..." onblur="checkInputUsername()">
+                    <a class="error-message">Aqui vai a mensagem de erro....</a>
+                </div>
+
+                <div class="form-content">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="Sua Senha..." onblur="checkInputPassword()">
+                    <a class="error-message">Aqui vai a mensagem de erro....</a>
+                </div>
+
+                <div class="form-content">
+                    <button type="submit" class="button" value="entrar"> Entrar </button>
+                    <button type="button" class="button2" onclick="forgotPassword()"> Esqueci a senha.</button>
+                </div>
+
+            </form>
+
+            <p>Ainda Não Tem Uma Conta? <a href="/Registro/Registro.html" class="link"> Criar Uma Conta </a></p>
+
+        </div> 
+
+    </div>
+
+    </section>
+
+    <script src="Login.js"></script>
